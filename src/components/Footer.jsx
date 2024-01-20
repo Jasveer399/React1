@@ -1,11 +1,11 @@
 import React from "react";
 import {
-  logo,
   Copyright,
   facebook,
   instagram,
   twitter,
   linkedin,
+  Bank,
 } from "../assets";
 import CTA from "./CTA";
 import { footerLinks } from "../contants";
@@ -37,8 +37,8 @@ function Footer() {
       flex flex-col md:flex-row md:gap-40  rounded-xl"
         >
           <div className="mt-0 xs:mb-10">
-            <img src={logo} alt="AppLogo" className="max-w-[200px]" />
-            <p className="text-dimWhite mt-8 ml-8 max-w-[250px] leading-7">
+            <img src={Bank} alt="AppLogo" className="max-w-[200px]" />
+            <p className="text-dimWhite mt-8 max-w-[250px] leading-7">
               A new way to make the payments easy, reliable and secure.
             </p>
           </div>
@@ -79,7 +79,7 @@ function Footer() {
             />
             <p className="text-dimWhite xs:block hidden ">2021 HooBank. All Rights Reserved.</p>
           </div>
-          <div class="group gap-2 flex items-center">
+          <div class="group gap-2 sm:gap-6 flex items-center">
             {comp.map((cp) => (
               <a href={cp.link}>
                  <img

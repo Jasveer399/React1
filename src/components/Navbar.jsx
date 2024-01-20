@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { logo, close, menu } from "../assets/index";
+import {close, menu,Bank} from "../assets/index";
 import { navLinks } from "../contants/index";
 
 function Navbar() {
@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="w-full py-6 flex justify-between items-center md:fixed md:px-0 px-6 z-10">
       <div className="w-[120px] h-[32px] ">
-        <img src={logo} alt="" className="md:ml-20"/>
+        <img src={Bank} alt="" className="md:ml-20"/>
       </div>
       <ul className="justify-end md:flex hidden items-center navbar">
             {navLinks.map((nav, index) => (
