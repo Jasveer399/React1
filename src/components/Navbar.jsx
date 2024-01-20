@@ -50,7 +50,7 @@ function Navbar() {
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 }`}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a onClick={()=>settoggle((prev)=>!prev)} href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
