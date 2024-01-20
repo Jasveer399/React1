@@ -9,7 +9,7 @@ function Client() {
       <div className="flex flex-wrap justify-between items-center gap-10 xs:gap-0 px-20 sm:flex-row">
         {clients.map((client, index) => (
           <img
-            className="text-white sm:w-[170px] w-[180px] xs:py-4 xs:px-6  xs:my-5 hover:bg-dimBlue rounded-3xl "
+            className="text-white sm:w-[170px] w-[180px] p-5 xs:py-4 xs:px-6  xs:my-5 hover:bg-dimBlue rounded-3xl "
             src={client.logo}
             alt={client.clientname}
           />
